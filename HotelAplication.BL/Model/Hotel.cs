@@ -7,25 +7,25 @@ using System.Threading.Tasks;
 namespace HotelAplication.BL.Model
 {
     /// <summary>
-    /// Роль.
+    /// Отель.
     /// </summary>
     [Serializable]
-    public class Role
+    public class Hotel
     {
         /// <summary>
-        /// Название.
+        /// Имя.
         /// </summary>
-        public string Name { get; }
+        string Name { get; }
 
         /// <summary>
-        /// Создать новую роль.
+        /// Создать новый отель.
         /// </summary>
-        /// <param name="name"> Имя роли.</param>
-        public Role(string name)
+        /// <param name="name"> Имя отеля.</param>
+        public Hotel(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentNullException("Роль не может быть пуста либо налл", nameof(name));
+                throw new ArgumentNullException("Название отеля не может быть пусто либо налл", nameof(name));
             }
 
             Name = name;
@@ -35,5 +35,6 @@ namespace HotelAplication.BL.Model
         {
             return Name;
         }
+
     }
 }

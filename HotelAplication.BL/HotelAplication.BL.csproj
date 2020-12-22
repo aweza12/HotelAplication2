@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ManagerController.cs" />
+    <Compile Include="Model\Hotel.cs" />
     <Compile Include="Model\Role.cs" />
     <Compile Include="Model\Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

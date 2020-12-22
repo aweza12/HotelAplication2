@@ -9,6 +9,7 @@ namespace HotelAplication.BL.Model
     /// <summary>
     /// Менеджер.
     /// </summary>
+    [Serializable]
     public class Manager
     {
         #region Properties
